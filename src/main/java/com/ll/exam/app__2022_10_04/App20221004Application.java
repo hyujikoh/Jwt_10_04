@@ -16,5 +16,5 @@ public class App20221004Application {
     @Bean
     public ObjectMapper objectMapper() {
         return new ObjectMapper();
-    }
+    } // 여기다 등록한 이유는 없다 아무곳에나 등록해도 된다.
 }
