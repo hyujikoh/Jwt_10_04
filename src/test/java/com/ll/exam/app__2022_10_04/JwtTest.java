@@ -50,4 +50,14 @@ class JwtTests {
 
         assertThat(secretKey1 == secretKey2).isTrue();
     }
+
+
+    @Test
+    @DisplayName("accessToken을 얻는다. ")
+    void t5() {
+        SecretKey secretKey1 = TestUtil.callMethod(jwtProvider, "getSecretKey");
+        SecretKey secretKey2 = TestUtil.callMethod(jwtProvider, "getSecretKey");
+
+        assertThat(secretKey1 == secretKey2).isTrue();
+    }
 }
